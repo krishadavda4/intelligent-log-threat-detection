@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hello! I am the Log Threat Detection Bot. Ask me about your system logs!</template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>Hi there! I can analyze your logs and detect threats. Type HELP to see what I can do.</template>
+  </category>
+
+  <category>
+    <pattern>HELP</pattern>
+    <template>You can ask me: THREAT LEVEL, HOW MANY ANOMALIES, ANY BRUTE FORCE, ANY SQL INJECTION, SHOW ALL ANOMALIES, IS SYSTEM SAFE</template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>I am an AI-powered Log Anomaly and Threat Detection Bot built with Java and AIML.</template>
+  </category>
+
+</aiml>

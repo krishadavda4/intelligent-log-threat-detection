@@ -1,0 +1,26 @@
+Set-Content -Path "aiml/threat_responses.aiml" -Value @"
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern>ANY BRUTE FORCE</pattern>
+    <template>Brute force attacks are detected when the same IP fails to login 3 or more times in a short period.</template>
+  </category>
+
+  <category>
+    <pattern>ANY SQL INJECTION</pattern>
+    <template>SQL injection attempts are flagged when suspicious query patterns are found in the log file.</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS CRITICAL THREAT</pattern>
+    <template>CRITICAL threat means your system has multiple active attacks. Take it offline and investigate immediately!</template>
+  </category>
+
+  <category>
+    <pattern>WHAT SHOULD I DO</pattern>
+    <template>1. Block the attacking IP. 2. Review all CRITICAL log entries. 3. Patch vulnerabilities. 4. Monitor system for 24 hours.</template>
+  </category>
+
+</aiml>
+"@

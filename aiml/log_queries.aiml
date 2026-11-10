@@ -1,0 +1,26 @@
+Set-Content -Path "aiml/log_queries.aiml" -Value @"
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern>WHAT IS THE THREAT LEVEL</pattern>
+    <template>The current threat level is analyzed from your log file. Ask the Java engine for the exact score.</template>
+  </category>
+
+  <category>
+    <pattern>HOW MANY ANOMALIES</pattern>
+    <template>The number of anomalies depends on your log file. Run the system to get the exact count.</template>
+  </category>
+
+  <category>
+    <pattern>SHOW ALL ANOMALIES</pattern>
+    <template>All detected anomalies include brute force attempts, SQL injection, unauthorized access, and critical system events.</template>
+  </category>
+
+  <category>
+    <pattern>IS SYSTEM SAFE</pattern>
+    <template>System safety is determined by the threat score. SAFE means no threats. CRITICAL means immediate action is needed.</template>
+  </category>
+
+</aiml>
+"@
