@@ -1,0 +1,14 @@
+THREAT DETECTION REPORT
+Generated: 2026-11-10T12:52:35.571067500
+Threat Level: CRITICAL
+----------------------------------------
+🚨 BRUTE FORCE DETECTED: IP 192.168.1.105 failed login 5 times!
+🚨 ERROR BURST DETECTED: 3 consecutive errors around 2024-01-15T08:26:47
+🔴 CRITICAL EVENT: Database unreachable - service down at 2024-01-15T08:27
+🔴 CRITICAL EVENT: Brute force attack detected - ip=192.168.1.105 blocked at 2024-01-15T08:29
+🔴 CRITICAL EVENT: Possible SQL injection detected - query blocked at 2024-01-15T09:01
+⚠️ SUSPICIOUS ACTIVITY: 'attack' detected - Brute force attack detected - ip=192.168.1.105 blocked
+⚠️ SUSPICIOUS ACTIVITY: 'unauthorized' detected - Unauthorized access attempt - file=/etc/passwd
+⚠️ SUSPICIOUS ACTIVITY: 'SQL injection' detected - Possible SQL injection detected - query blocked
+----------------------------------------
+Recommendation: 🚨 CRITICAL THREAT! Take system offline and investigate NOW!
